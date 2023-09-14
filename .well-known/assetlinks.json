@@ -1,0 +1,20 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dk.entercard.remember.debug",
+      "sha256_cert_fingerprints":
+      ["93:E9:BE:95:C2:51:84:0B:B5:1A:53:5D:3B:25:ED:9E:2A:D6:45:C1:A0:78:DC:A8:A7:D4:42:48:FD:1A:75:0E"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dk.entercard.lo.debug",
+      "sha256_cert_fingerprints":
+      ["93:E9:BE:95:C2:51:84:0B:B5:1A:53:5D:3B:25:ED:9E:2A:D6:45:C1:A0:78:DC:A8:A7:D4:42:48:FD:1A:75:0E"]
+    }
+  }
+]
