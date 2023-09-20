@@ -1,20 +1,12 @@
 <!doctype html>
 <html>
-<body>
+<body onload="launchAppOnAndroidDevice()">
   <script>
-
-    // create link dynamically
-    var link = document.createElement('a');
-
-    // set href attribute
-    link.href = 'intent://mobappnb.entercard.com?signicatExternalReference=5fbaf2a9-1fb1-4d77-9060-55f18acecd1a&signicatArtifact=100smq4c4z0o2wbd3fbl9ytxktj8q3avynerfy9pq07hpbmqf7#Intent;scheme=https;package=dk.entercard.lo.debug;S.browser_fallback_url=https%3A%2F%2Fwww.google.com;end';
-
-    // set link text
-    link.text = 'Hi !!! This is dynamic link';
-
-    // append link element to the body
-    document.body.appendChild(link);
-
+function launchAppOnAndroidDevice() {
+   const url = 'intent://mobappnb.entercard.com?signicatExternalReference=5fbaf2a9-1fb1-4d77-9060-55f18acecd1a&signicatArtifact=100smq4c4z0o2wbd3fbl9ytxktj8q3avynerfy9pq07hpbmqf7#Intent;scheme=https;package=dk.entercard.lo.debug;S.browser_fallback_url=https%3A%2F%2Fwww.google.com;end';
+   window.location.replace(url);
+}
   </script>
 </body>
+  <p> Welcome User</p>
 </html>
