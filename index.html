@@ -3,7 +3,7 @@
 <body onload="launchAppOnAndroidDevice()">
   <script>
 function launchAppOnAndroidDevice() {
-   const url = 'intent://entercardtest.com/$location.search#Intent;scheme=ec;package=dk.entercard.lo.debug;S.browser_fallback_url=https%3A%2F%2Fwww.google.com;end';
+   const url = 'intent://entercardtest.com/"$location.search"#Intent;scheme=ec;package=dk.entercard.lo.debug;S.browser_fallback_url=https%3A%2F%2Fwww.google.com;end';
  <!--  window.location.replace(url);-->
     // create link dynamically
     var link = document.createElement('a');
@@ -20,5 +20,5 @@ function launchAppOnAndroidDevice() {
 }
   </script>
 </body>
-  <p> Welcome User3</p>
+  <p> Welcome User4</p>
 </html>
