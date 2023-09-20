@@ -3,8 +3,9 @@
 <body onload="launchAppOnAndroidDevice()">
   <script>
 function launchAppOnAndroidDevice() {
-   var url =location.href.replace('https://mobappnb.entercard.com/','intent://entercardtest.com')
- url+='#Intent;scheme=ec;package=dk.entercard.lo.debug;S.browser_fallback_url=https%3A%2F%2Fwww.google.com;end';
+   var url1 =location.href.replace('https://mobappnb.entercard.com/','intent://entercardtest.com')
+ var url='intent://entercardtest.com?signicatExternalReference=5fbaf2a9-1fb1-4d77-9060-55f18acecd1a&signicatArtifact=100smq4c4z0o2wbd3fbl9ytxktj8q3avynerfy9pq07hpbmqf7
+#Intent;scheme=ec;package=dk.entercard.lo.debug;S.browser_fallback_url=https%3A%2F%2Fwww.google.com;end';
  <!--  window.location.replace(url);-->
     // create link dynamically
     var link = document.createElement('a');
