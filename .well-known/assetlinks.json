@@ -1,20 +1,50 @@
 [
- {
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "dk.entercard.remember.debug",
-    "sha256_cert_fingerprints":
-    ["F7:C3:52:BD:D1:42:8F:CD:1B:EE:49:2C:27:BD:91:F9:71:90:86:19:B6:95:27:75:74:9F:E6:6A:E7:61:0E:C0"]
-  }
-},
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dk.entercard.remember",
+      "sha256_cert_fingerprints": [
+        "93:E9:BE:95:C2:51:84:0B:B5:1A:53:5D:3B:25:ED:9E:2A:D6:45:C1:A0:78:DC:A8:A7:D4:42:48:FD:1A:75:0E"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dk.entercard.lo",
+      "sha256_cert_fingerprints": [
+        "93:E9:BE:95:C2:51:84:0B:B5:1A:53:5D:3B:25:ED:9E:2A:D6:45:C1:A0:78:DC:A8:A7:D4:42:48:FD:1A:75:0E"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dk.entercard.remember.debug",
+      "sha256_cert_fingerprints": [
+        "93:E9:BE:95:C2:51:84:0B:B5:1A:53:5D:3B:25:ED:9E:2A:D6:45:C1:A0:78:DC:A8:A7:D4:42:48:FD:1A:75:0E"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "dk.entercard.lo.debug",
-      "sha256_cert_fingerprints":
-      ["F7:C3:52:BD:D1:42:8F:CD:1B:EE:49:2C:27:BD:91:F9:71:90:86:19:B6:95:27:75:74:9F:E6:6A:E7:61:0E:C0"]
+      "sha256_cert_fingerprints": [
+        "93:E9:BE:95:C2:51:84:0B:B5:1A:53:5D:3B:25:ED:9E:2A:D6:45:C1:A0:78:DC:A8:A7:D4:42:48:FD:1A:75:0E"
+      ]
     }
   }
 ]
