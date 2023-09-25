@@ -3,10 +3,10 @@
 <body onload="launchAppOnAndroidDevice()">
   <script>
 function launchAppOnAndroidDevice() { 
-   var url = 'intent://mohammadshakirqureshi.github.io'
-<!-- location.href.toString().replace('https://mobappnb.entercard.com/','intent://mobappnb.entercard.com')-->
-  url+='#Intent;scheme=https;package=dk.entercard.lo.debug;S.browser_fallback_url=https%3A%2F%2Fwww.google.com;end';
- <!--  window.location.replace(url);-->
+   var url = location.href.toString()
+       url = url.replace('https://mobappnb.entercard.com/','intent://mobappnb.entercard.com')
+       url+='#Intent;scheme=https;package=dk.entercard.lo.debug;S.browser_fallback_url=https%3A%2F%2Fwww.google.com;end';
+    
     // create link dynamically
     var link = document.createElement('a');
 
