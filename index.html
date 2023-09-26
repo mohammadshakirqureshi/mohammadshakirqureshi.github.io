@@ -5,14 +5,16 @@
 function launchAppOnAndroidDevice() { 
   const myArray = location.href.toString().split("?");
   var url = 'intent://mobappnb.entercard.com?'+myArray[1]
-  url+='#Intent;scheme=https;package=dk.entercard.lo.debug;S.browser_fallback_url=https%3A%2F%2Fwww.google.com;end';
+  url+='#Intent;scheme=https;package=dk.entercard.remember.debug;S.browser_fallback_url=https%3A%2F%2Fwww.google.com;end';
   location.replace(url)
+  document.getElementById("p1").innerHTML = url;
 }
   </script>
 
   <h1>Great :) You are registered successfully.</h1>
   <p>Click "Proceed"</p>
   <button onclick="launchAppOnAndroidDevice()">Proceed</button>
-  
+  <br><br>
+  Redirect URL :<p id="p1"> </p>
 </body> 
 </html>
