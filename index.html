@@ -5,7 +5,7 @@
 function launchAppOnAndroidDevice() { 
   const urlTokens = location.href.toString().split("?");
   var paramArray = urlTokens[1].split("&")
-  var url = 'intent://mobappnb.entercard.com?'+paramArray[0]+'&'+paramArray[1]
+  var url = 'intent://entercardtestapps.page.link/mitidauth?'+paramArray[0]+'&'+paramArray[1]
   url+='#Intent;scheme=https;'+paramArray[2]+';S.browser_fallback_url=https%3A%2F%2Fwww.google.com;end';
   location.replace(url)
   document.getElementById("p1").innerHTML = url;
