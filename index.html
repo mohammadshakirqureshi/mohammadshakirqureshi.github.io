@@ -1,21 +1,124 @@
 <!doctype html>
 <html>
+    <head>       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 <body>
-  <script>
-function launchAppOnAndroidDevice() { 
-  const urlTokens = location.href.toString().split("?");
-  var paramArray = urlTokens[1].split("&")
-  var url = 'intent://entercardtestapps.page.link/mitidauth?'+paramArray[0]+'&'+paramArray[1]
-  url+='#Intent;scheme=https;'+paramArray[2]+';S.browser_fallback_url=https%3A%2F%2Fwww.google.com;end';
-  location.replace(url)
-  document.getElementById("p1").innerHTML = url;
+<style>
+* {
+    box-sizing: border-box;
 }
-  </script>
+body {
+    padding: 0;
+    margin: 0;
+    background: url("background2x.jpg") no-repeat fixed;
+    background-size: 100% 100%;
+}
+.logo-box {
+    display: flex;
+    @media screen and (max-width: 670px) {
+        height: 130px;
+    }
+}
+.header-navigation-logo {
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 0;
+    cursor: pointer;
+    background: url("header-logo-image.svg") 0% 0% no-repeat;
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+.popup-container {
+    max-width: 42rem;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 10rem;
+    background-color: #fff;
+    text-align: center;
+    height: 200px;    
+    @media screen and (max-width: 670px) {
+        height: 250px;
+    }
+    @media only screen and (max-width: 670px)  and (orientation: landscape) {
+        margin-top: 20px;
+    }
+}
+#checkmark
+{
+    transform: rotate(45deg);
+    height: 45px;
+    width: 20px;
+    margin-left: 50%;
+    border-bottom: 9px solid #fff;
+    border-right: 9px solid #fff;
+}
+.success_checkbox {
+    background-color: green;
+    height: 60px;
+}
+.succes-content {
+    font-weight: bold;
+    font-size: 22px;
+    color: green;
+    font-style: italic;
+    @media screen and (max-width: 670) {
+        font-size: 60px;
+        padding: 0 15px;
+    }
+}
+.popup-btn {
+    background-color: green;
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    @media screen and (max-width: 670) {
+        font-size: 30px;
+        padding: 20px 40px;
+    }
+}
+button.popup-btn:hover {
+    background-color: #008000ab;
+}
+</style>
 
-  <h1>Great :) You are registered successfully.</h1>
-  <p>Click "Proceed"</p>
-  <button onclick="launchAppOnAndroidDevice()">Proceed</button>
-  <br><br>
-  Redirect URL :<p id="p1"> </p>
+ 
+
+  <!-- <h1>Great :) You are registered successfully.</h1>
+<p>Click "Proceed"</p>
+<button onclick="launchAppOnAndroidDevice()">Proceed</button>
+<br><br>
+  Redirect URL :<p id="p1"> </p> -->
+
+  
+<div class="logo-box">
+    <span class="header-navigation-logo align-c"></span>
+</div>
+<div class="popup-section">
+    <section class="popup-container">
+        <div class="success_checkbox">
+            <div id="checkmark"></div>
+        </div>
+        <p class="succes-content">Great :) You are registered successfully.</p>
+        <button class="popup-btn" onclick="launchAppOnAndroidDevice()">Proceed</button>
+    </section>    
+</div>
+
+
+<script>
+    function launchAppOnAndroidDevice() { 
+      const urlTokens = location.href.toString().split("?");
+      var paramArray = urlTokens[1].split("&")
+      var url = 'intent://entercardtestapps.page.link/mitidauth?'+paramArray[0]+'&'+paramArray[1]
+      url+='#Intent;scheme=https;'+paramArray[2]+';S.browser_fallback_url=https%3A%2F%2Fwww.google.com;end';
+      location.replace(url)
+      document.getElementById("p1").innerHTML = url;
+    }
+</script>
 </body> 
 </html>
